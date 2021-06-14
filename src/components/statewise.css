@@ -1,0 +1,79 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.container-fluid{
+    width: 60%;
+    margin: auto;
+}
+
+.main-heading{
+    text-align: center;
+    background-color: #e9aa4b;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.table-responsive{
+    max-height: 600px;
+    background-color: rgba(247, 221, 167, 0.925);
+    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+    overflow-y: scroll; /* Show vertical scrollbar */
+    overflow-x: scroll; /* Show horizontal scrollbar */
+
+}
+
+
+tr:hover{
+    background-color: #ffa;
+}
+
+th,
+td{
+    position: relative;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+td:hover::after,
+th:hover::after{
+    content:"";
+    position: absolute;
+    background-color: #f2f2f2;
+    left: 0;
+    top: -5000px;
+    height: 5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.table tr td:hover:nth-child(4){
+    background-color: rgb(231,83, 115);
+    color: aliceblue;
+    border: 0.5px solid rgb(12, 12, 12);
+}
+
+.table tr td:hover{
+    background-color: rgb(117, 223, 122);
+    color: aliceblue;
+    border: 0.5px solid rgb(12, 12, 12);
+}
+
+.thead-dark{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:cornsilk;
+
+}
